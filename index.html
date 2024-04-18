@@ -20,7 +20,7 @@
         <div class="container">
             <img src="/ASSESTS/logo.png" alt="logo">
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <button type="button" class="red-btn fw-semibold">Sign In</button>
+                <button type="button" class="red-btn fw-semibold" onclick="home()">Sign In</button>
             </div>
         </div>
     </nav>
@@ -146,6 +146,19 @@
     <p class="netflix-india ps-3">Netflix India</p>
   </div>
 </footer>
+
+<script> 
+  function home() { 
+    var redirect = confirm('Welcome To Homepage'); 
+
+    if (redirect) { 
+      window.location.href = "https://www.netflix.com/login"; 
+    } 
+    else { 
+      window.history.back(); 
+    } 
+  } 
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
      <script src="/js/bootstrap.js"></script>
